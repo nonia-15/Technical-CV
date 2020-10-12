@@ -1,0 +1,70 @@
+body{
+	background-color: #474e5d;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+.profile{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  padding: 8px;
+  color:white;
+  background-color: #474e5d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+@media (max-width: 991px) {
+  .header, .container, .front-page, 
+  .back-page, .content-3rd, 
+  .content-4th, .content-awards,.words, .front, .skill, .progressBar {
+    width:100%;
+    margin-top: 0;
+	position:absolute;
+  }
+}
+button:hover, a:hover{
+  opacity: 0.7;
+  background-color: #474e5d;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  
+}
