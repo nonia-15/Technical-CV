@@ -1,0 +1,162 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #474e5d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.header {
+  padding: 5px;
+  background-color: #474e5d;
+  color: white;
+  box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2); 
+}
+::-webkit-scrollbar {
+  width: 20px;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px black; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+   
+}
+
+.container{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  perspective: 1000px;
+  float: left;
+  padding: 10px;
+  margin-bottom:10px;
+}
+
+.front {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.container:hover .front {
+  transform: rotateY(180deg);
+}
+
+.front-page, .back-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front-page {
+  background-color: #bbb;
+  color: black;
+}
+
+.back-page{
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.skill,progressBar {
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  height: 20px;
+  border: 2px solid black;
+  position: relative;
+  display: block;
+}
+  
+.skill > span {
+  background-color: blue;
+  border-radius: 2px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+.content-awards{
+	width: 100%;
+	height:70%;
+	float: left;
+	clear:both;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.words{
+	float: right;
+	clear:both;
+    width: 70%;
+    
+	padding: -2px 0 0 2px;;
+}
+
+.content-4th{
+	width: 100%;
+	height:100%;
+	float: right;
+	clear:both;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.content-3rd{
+	width: 100%;
+	height:100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	float: right;
+	clear:both;
+}
+
+@media (max-width: 991px) {
+  .header, .container, .front-page, 
+  .back-page, .content-3rd, 
+  .content-4th, .content-awards,.words, .front, .skill, .progressBar {
+    width:100%;
+    margin-top: 0;
+	position:absolute;
+  }
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  color: white;
+  font-size: 17px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.prev-nxt {
+  background-color: grey;
+  color: black;
+  cursor: pointer;
+}
+
+.far-aside {
+  float:right;
+ 
+}
+
+
